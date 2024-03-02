@@ -7,6 +7,10 @@
 	padding: 0;
 }
 
+:root {
+	--primary-color: #e50914;
+}
+
 html,
 :host {
 	line-height: 1.5;
@@ -23,7 +27,20 @@ html,
 }
 
 body {
-	background-color: black;
+	background-color: #000;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--primary-color);
+	border-radius: 20px;
 }
 
 .container {
