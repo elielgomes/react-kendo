@@ -1,4 +1,5 @@
+import { Details } from "./Details";
 import { Home } from "./Home";
 import { NotFound } from "./NotFound";
 
-export { Home, NotFound };
+export { Details, Home, NotFound };

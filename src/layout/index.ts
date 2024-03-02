@@ -1,3 +1,4 @@
 import { GridMovieCards } from "./GridMovieCards";
+import { Navbar } from "./Navbar";
 
-export { GridMovieCards };
+export { GridMovieCards, Navbar };
