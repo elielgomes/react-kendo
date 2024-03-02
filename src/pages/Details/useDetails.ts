@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useImageColor from "use-image-color";
-import { GetMovie, GetTrailer } from "../../providers/api-provider";
+import { GetMovie, GetTrailer } from "../../providers/api.provider";
 import { getUrlBackdropImage } from "../../utils/get-url-images";
 import { IDetailsProps } from "./";
 
