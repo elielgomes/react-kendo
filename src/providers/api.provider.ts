@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IGenreList, IMovie, IMovieList, ITrailer } from "../interfaces/";
+import { IGenreList, IMovie, IMovieList, ITrailer } from "../interfaces";
 const apiKey = process.env.REACT_APP_API_KEY;
 
 export const GetTrailer = async (id: string) => {
