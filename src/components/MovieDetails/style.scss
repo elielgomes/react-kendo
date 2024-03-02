@@ -1,0 +1,45 @@
+.movie-details {
+	display: flex;
+	max-width: 600px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	position: absolute;
+	right: auto;
+
+	.title {
+		font-size: 30px;
+		text-align: start;
+		max-width: 400px;
+	}
+
+	.release-date {
+		font-size: 40px;
+		font-weight: 400;
+		text-align: start;
+	}
+
+	.btn-movie {
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid;
+		padding: 6px 15px;
+		background-color: transparent;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			border: 1px solid var(--primary-color);
+			background-color: var(--primary-color);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.movie-details {
+		right: -200px;
+	}
+}
