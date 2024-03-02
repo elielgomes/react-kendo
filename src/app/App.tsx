@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import { Navbar } from "../layout/Navbar";
 import { Details, Home, NotFound } from "../pages";
 
 const App: React.FC = () => (
 	<BrowserRouter>
+		<Navbar />
 		<Routes>
 			<Route path="/" element={<Home />} />
 			<Route path="/details/:id" element={<Details />} />
