@@ -1,0 +1,50 @@
+header {
+	height: 80px;
+	background-color: #1e1e1e6f;
+	position: fixed;
+	width: 100vw;
+	z-index: 100;
+
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		gap: 20px;
+
+		.brand {
+			width: 70px;
+			height: auto;
+		}
+		.search-input {
+			width: 160px;
+			height: 40px;
+			border: none;
+			padding: 0 20px;
+			background-color: #fff;
+			color: #1e1e1e;
+			font-size: 16px;
+			border-radius: 8px;
+			&:focus {
+				outline: none;
+				border: none;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	header nav .brand {
+		width: 90px;
+	}
+
+	header nav .search-input {
+		width: 250px;
+	}
+}
+
+@media (min-width: 1024px) {
+	header nav .brand {
+		width: 140px;
+	}
+}
