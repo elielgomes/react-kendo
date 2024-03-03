@@ -6,8 +6,10 @@ import { IDetailsProps } from "./";
 
 export const useDetails = (id: string) => {
 	const [details, setDetails] = useState<IDetailsProps | null>(null);
+	const [loading, setLoading] = useState<boolean>(false);
 
 	const getData = async () => {
+		setLoading(true);
 		try {
 			const [resMovie, resTrailer] = await Promise.all([
 				GetMovie(id || ""),
@@ -16,6 +18,8 @@ export const useDetails = (id: string) => {
 			setDetails({ trailerKey: resTrailer.results[0]?.key, movie: resMovie });
 		} catch (error) {
 			console.error(error);
+		} finally {
+			setLoading(false);
 		}
 	};
 
@@ -39,5 +43,6 @@ export const useDetails = (id: string) => {
 		color,
 		movieImageBackdropUrl,
 		movieImagePosterUrl,
+		loading,
 	};
 };

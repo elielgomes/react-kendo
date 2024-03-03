@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { MovieDetails } from "../../components/MovieDetails";
+import { FloatButtonHome, Loading, MovieDetails } from "../../components";
 import { IMovie } from "../../interfaces";
 import "./style.scss";
 import { useDetails } from "./useDetails";
@@ -13,10 +13,15 @@ export interface IDetailsProps {
 export const Details: React.FC = () => {
 	const { id } = useParams();
 
-	const { color, details, movieImageBackdropUrl, movieImagePosterUrl } = useDetails(id || "");
+	const { color, details, movieImageBackdropUrl, movieImagePosterUrl, loading } = useDetails(
+		id || "",
+	);
 
-	return (
+	return loading ? (
+		<Loading />
+	) : (
 		<main className="k-min-h-screen">
+			<FloatButtonHome />
 			<section className="section-details">
 				<div className="movie-details-wrapper" style={{ backgroundColor: color }}>
 					{details && <MovieDetails details={details} bgColor={color} />}
