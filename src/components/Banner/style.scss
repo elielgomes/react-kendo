@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.banner {
+	opacity: 0.9;
+	min-height: 80vh;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	img {
+		padding-top: 90px;
+	}
+
+	.title {
+		font-size: 80px;
+		text-align: center;
+		font-family:
+			Bebas Neue,
+			Bebas,
+			sans-serif;
+		font-weight: bolder;
+		color: #e50914;
+		letter-spacing: 10px;
+		text-shadow: #000 2px 2px 20px;
+	}
+
+	.content-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		max-width: 700px;
+		gap: 20px;
+
+		button {
+			font-weight: 600;
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			outline: none;
+			padding: 10px 15px;
+			background-color: transparent;
+			transition: all 0.2s ease-in-out;
+			background-color: var(--primary-color);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.banner .title {
+		font-size: 100px;
+	}
+}
