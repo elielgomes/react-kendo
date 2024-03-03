@@ -6,11 +6,10 @@ import "./style.scss";
 
 interface IMovieCardProps {
 	movie: IMovie;
-	genre?: string | null;
 	color: string;
 }
 
-export const MovieCard: React.FC<IMovieCardProps> = ({ color, movie, genre = "Drama" }) => (
+export const MovieCard: React.FC<IMovieCardProps> = ({ color, movie }) => (
 	<div className="movie-card k-overflow-hidden k-bg-black k-d-flex k-justify-content-center k-align-items-start k-relative">
 		<div className="body k-d-flex k-justify-content-center k-align-items-center">
 			<img src={getUrlPosterImage(movie.poster_path)} alt={movie.title} className="image" />
@@ -19,7 +18,11 @@ export const MovieCard: React.FC<IMovieCardProps> = ({ color, movie, genre = "Dr
 			<p className="k-text-white k-text-center k-fs-xl k-text-truncate k-px-4 k-pt-2.5">
 				{movie?.title}
 			</p>
-			{genre && <p className="k-text-center k-fs-md k-text-white k-font-medium">{genre}</p>}
+			{movie.genres && (
+				<p className="k-text-center k-fs-md k-text-white k-font-medium">
+					{movie.genres[0].name}
+				</p>
+			)}
 			<StarRating voteAverage={movie.vote_average} />
 			<div className="k-display-flex k-justify-content-center k-p-2.5">
 				<p className="release-date k-text-white">
