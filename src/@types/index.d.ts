@@ -1,1 +1,1 @@
-declare module "use-image-color";
+declare module "quantize";
