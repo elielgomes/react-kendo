@@ -7,9 +7,13 @@ import "./style.scss";
 
 interface IGridMovieCardsProps {
 	movies: IMovieList | null;
+	themeColor?: string;
 }
 
-export const GridMovieCards: React.FC<IGridMovieCardsProps> = ({ movies }) => (
+export const GridMovieCards: React.FC<IGridMovieCardsProps> = ({
+	movies,
+	themeColor = "#1e1e1e",
+}) => (
 	<GridLayout
 		className="custom-grid-layout k-w-fit k-mx-auto"
 		cols={[{ width: 210 }, { width: 210 }, { width: 210 }, { width: 210 }]}
@@ -21,7 +25,7 @@ export const GridMovieCards: React.FC<IGridMovieCardsProps> = ({ movies }) => (
 				className="k-d-flex k-justify-content-center k-align-items-center"
 			>
 				<Link to={`/details/${item.id}`}>
-					<MovieCard movie={item} color="#1e1e1e" />
+					<MovieCard movie={item} color={themeColor} />
 				</Link>
 			</GridLayoutItem>
 		))}
