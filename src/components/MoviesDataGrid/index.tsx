@@ -7,6 +7,7 @@ import {
 } from "@progress/kendo-react-grid";
 import { DropdownFilterCell } from "./dropdown-filter-cell";
 import { RatingCell } from "./rating-cell";
+import { SeeDetails } from "./see-details-cell";
 import "./style.scss";
 import { useMoviesDataGrid } from "./use-movies-data-grid";
 
@@ -26,16 +27,8 @@ const filterOperators: GridFilterOperators = {
 };
 
 export const MoviesDataGrid = () => {
-	const {
-		allGenres,
-		auxData,
-		filter,
-		page,
-		sort,
-		filterChange,
-		pageChange,
-		sortChange,
-	} = useMoviesDataGrid();
+	const { allGenres, auxData, filter, page, sort, filterChange, pageChange, sortChange } =
+		useMoviesDataGrid();
 
 	return (
 		<Grid
@@ -59,7 +52,7 @@ export const MoviesDataGrid = () => {
 			onSortChange={sortChange}
 		>
 			<GridColumn field="id" title="ID" width={100} filterable={false} />
-			<GridColumn field="title" title="Nome" width={420} />
+			<GridColumn field="title" title="Nome" width={420} cells={{ data: SeeDetails }} />
 			<GridColumn
 				width={310}
 				field="genre"

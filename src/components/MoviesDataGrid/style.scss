@@ -1,3 +1,15 @@
 .k-rating-item.k-selected {
-		color: #ffa600 !important;
+	color: #ffa600 !important;
+}
+
+.title-cell {
+	padding: 0px !important;
+	.hover-title-grid {
+		display: flex;
+		width: 100%;
+		padding: 10px;
+		&:hover {
+			color: #0d6efd !important;
+		}
+	}
 }
