@@ -1,0 +1,41 @@
+.notfound-wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		img {
+			max-width: 500px;
+			width: 100%;
+			height: auto;
+		}
+
+		.text{
+			font-size: 40px;
+			font-weight: 600;
+		}
+
+		.text-primary{
+			color: var(--primary-color);
+		}
+
+		a {
+			font-weight: 600;
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			outline: none;
+			padding: 10px 15px;
+			background-color: transparent;
+			transition: all 0.2s ease-in-out;
+			background-color: var(--primary-color);
+			color: #fff;
+			text-decoration: none;
+		}
+}
+
+.notfound-img {
+
+}
