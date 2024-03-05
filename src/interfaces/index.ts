@@ -23,6 +23,7 @@ export interface IMovie {
 export interface IMovieList {
 	results: IMovie[];
 	total_pages: number;
+	total_results: number;
 }
 
 export interface ITrailer {
