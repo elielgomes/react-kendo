@@ -2,7 +2,7 @@
 
 .banner {
 	opacity: 0.9;
-	min-height: 85vh;
+	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -10,9 +10,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	img {
-		padding-top: 90px;
-	}
 
 	.title {
 		font-size: 80px;
