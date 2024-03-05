@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { FloatButtonHome, Loading, MovieDetails } from "../../components";
 import { IMovie } from "../../interfaces";
 import "./style.scss";
-import { useDetails } from "./useDetails";
+import { useDetails } from "./use-details";
 
 export interface IDetailsProps {
 	trailerKey?: string;

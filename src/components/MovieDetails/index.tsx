@@ -3,7 +3,7 @@ import { BsPlay } from "react-icons/bs";
 import { IDetailsProps } from "../../pages/Details";
 import { ModalMovie } from "../ModalMovie";
 import "./style.scss";
-import { useMovieDetails } from "./useMovieDetails";
+import { useMovieDetails } from "./use-movie-details";
 
 interface IMovieDetailsProps {
 	details: IDetailsProps;

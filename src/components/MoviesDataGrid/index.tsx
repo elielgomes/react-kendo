@@ -8,7 +8,7 @@ import {
 import { DropdownFilterCell } from "./dropdown-filter-cell";
 import { RatingCell } from "./rating-cell";
 import "./style.scss";
-import { useMoviesDataGrid } from "./useMoviesDataGrid";
+import { useMoviesDataGrid } from "./use-movies-data-grid";
 
 interface ICategoryFilterProps extends GridFilterCellProps {
 	data: string[];

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import useImageColor from "use-image-color";
+import { IDetailsProps } from ".";
 import { GetMovie, GetTrailer } from "../../providers/api.provider";
 import { getUrlBackdropImage } from "../../utils/get-url-images";
-import { IDetailsProps } from "./";
 
 export const useDetails = (id: string) => {
 	const [details, setDetails] = useState<IDetailsProps | null>(null);
