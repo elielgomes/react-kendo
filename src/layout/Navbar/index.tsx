@@ -1,13 +1,12 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import brand from "../../assets/img/DEVFLIX-brand-sm.png";
-import { SearchInputContext } from "../../contexts/search-input.context";
 import { useDebounce } from "../../hooks/use-debounce";
 import "./style.scss";
 
 export const Navbar: React.FC = () => {
 	const navigate = useNavigate();
-	const { searchInput, setSearchInput } = useContext(SearchInputContext);
+	const [searchInput, setSearchInput] = useState<string>("");
 	const debounceValue: string = useDebounce(searchInput, 2000);
 
 	useEffect(() => {
