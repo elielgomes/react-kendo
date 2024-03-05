@@ -2,11 +2,11 @@ import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { GridMovieCards } from "../../layout";
 
-import { FloatButtonHome, Loading } from "../../components";
+import { FloatButtonHome, Loading, Pagination } from "../../components";
 import { useSearch } from "./use-search";
 
 export const Search: React.FC = () => {
-	const { movies, query, loading } = useSearch();
+	const { movies, query, loading, handlePagination, currentPage } = useSearch();
 
 	return loading ? (
 		<Loading />
@@ -22,6 +22,15 @@ export const Search: React.FC = () => {
 							: `Nenhum resultado para: ${query}`}
 					</h1>
 					<GridMovieCards movies={movies} />
+					{movies?.results.length !== 0 && (
+						<div className="k-d-flex k-justify-content-center k-py-24">
+							<Pagination
+								changePage={handlePagination}
+								currentPage={currentPage}
+								maxPage={movies?.total_pages || 1}
+							/>
+						</div>
+					)}
 				</section>
 			</main>
 		</>
