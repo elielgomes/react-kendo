@@ -50,7 +50,7 @@ export const useSearch = () => {
 
 	useEffect(() => {
 		fetchData(currentPage, query);
-	}, [currentPage]);
+	}, [currentPage, query]);
 
 	return { movies, query, currentPage, loading, handlePagination };
 };
