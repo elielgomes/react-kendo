@@ -41,19 +41,3 @@ export const GetPopularMovieList = async (page: number) => {
 	const data: IMovieList = await response.data;
 	return data;
 };
-
-export const GetTopMovieList = async (page: number) => {
-	const response = await axios.get(
-		`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=pt-br&page=${page}`,
-	);
-	const data: IMovieList = await response.data;
-	return data;
-};
-
-export const GetUpcomingMovieList = async (page: number) => {
-	const response = await axios.get(
-		`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=pt-br&page=${page}`,
-	);
-	const data: IMovieList = await response.data;
-	return data;
-};
