@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import useImageColor from "use-image-color";
 import { IDetailsProps } from ".";
+import { useImageColor } from "../../hooks/use-image-color";
 import { GetMovie, GetTrailer } from "../../providers/api.provider";
 import { getUrlBackdropImage } from "../../utils/get-url-images";
 
@@ -28,7 +28,7 @@ export const useDetails = (id: string) => {
 	}, [id]);
 
 	const { colors } = useImageColor(
-		details?.movie.poster_path && getUrlBackdropImage(details.movie?.poster_path),
+		details?.movie.poster_path ? getUrlBackdropImage(details.movie?.poster_path) : "",
 		{ cors: true, colors: 4 },
 	);
 
