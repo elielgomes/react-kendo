@@ -1,46 +1,106 @@
-# Getting Started with Create React App
+# Devflix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align='center'>
+  <img src='https://user-images.githubusercontent.com/108281436/205342374-909c139e-cead-4b95-bd29-4e6979e44821.png'/>
+</p>
 
-## Available Scripts
+# 🛡️ Badges
 
-In the project directory, you can run:
+![Open Source](https://img.shields.io/badge/OpenSource-%E2%9D%A4-green)
 
-### `npm start`
+# 🔍 Indice
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Índice](#)
+- [Badges](#)
+- [Descrição do Projeto](#)
+- [Status do Projeto](#)
+- [Funcionalidades e Demonstração da Aplicação](#)
+- [Acesso ao Projeto](#)
+- [Tecnologias utilizadas](#)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# ✏️ Pré-requisitos
 
-### `npm test`
+Node.js >= 18.0.0
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# ✏️ Instalação
 
-### `npm run build`
+Clone o repositório do GitHub:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/seu-usuario/nome-do-projeto.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navegue até o diretório do projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd nome-do-projeto
+```
 
-### `npm run eject`
+Instale as dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# ✏️ Iniciar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# ✏️ Descrição do Projeto
 
-## Learn More
+Principais Objetivos
+Criar uma aplicação simulando um serviço de streaming utilizando TypeScript, ReactJs e Kendo UI.
+Criar uma lista de objetos renderizada assincronamente através do consumo de uma API externa.
+Implementar um sistema de busca que deve ser feito 2s após o usuário parar de digitar.
+Adicionar eventos/animações de carregamento enquanto o usuário aguarda a resposta da API.
+Responsividade da página nos principais breakpoints.
+Implementar um sistema de paginação.
+Criar um sistema de rotas dinâmicas.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# ✏️ Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT
+
+# 📈 Status do Projeto
+
+![Frame 16](https://user-images.githubusercontent.com/108281436/192803852-d0a0e110-a351-4eb9-ad0e-95cb36a0bb49.png)
+<img width="120" src="https://user-images.githubusercontent.com/108281436/192803852-d0a0e110-a351-4eb9-ad0e-95cb36a0bb49.png" />
+
+# 🛠️ Funcionalidades e Demonstração da Aplicação
+
+<h2 align="center">
+  Telas Versão Mobile
+</h2>
+
+<h2 align="center">
+  Tela Versão Desktop
+</h2>
+
+# 🔑 Acesso ao Projeto
+
+[![Acesso](https://user-images.githubusercontent.com/108281436/192802838-0c7abeda-f41a-4c34-86c7-ead30e2b223c.png)](#) <br>
+ou acesse direto pelo link
+
+# 👨🏻‍💻 Tecnologias utilizadas
+
+<div align='start'>
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  />
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  />
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
+
+<img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
+
+</div>
