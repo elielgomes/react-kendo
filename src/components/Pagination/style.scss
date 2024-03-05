@@ -1,0 +1,15 @@
+.btn-pagination {
+	font-size: 16px;
+	background-color: transparent;
+	color: var(--primary-color);
+	border: 2px solid var(--primary-color);
+	outline: none;
+	padding: 5px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	&.active {
+		background-color: var(--primary-color);
+		color: #fff;
+	}
+}
