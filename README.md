@@ -4,36 +4,26 @@
   <img src='https://user-images.githubusercontent.com/108281436/205342374-909c139e-cead-4b95-bd29-4e6979e44821.png'/>
 </p>
 
-# 🛡️ Badges
+## 📌 Começando
 
-![Open Source](https://img.shields.io/badge/OpenSource-%E2%9D%A4-green)
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-# 🔍 Indice
-
-- [Índice](#)
-- [Badges](#)
-- [Descrição do Projeto](#)
-- [Status do Projeto](#)
-- [Funcionalidades e Demonstração da Aplicação](#)
-- [Acesso ao Projeto](#)
-- [Tecnologias utilizadas](#)
-
-# ✏️ Pré-requisitos
+## 📋 Pré-requisitos
 
 Node.js >= 18.0.0
 
-# ✏️ Instalação
+## 🔧 Instalação
 
 Clone o repositório do GitHub:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
+git clone https://github.com/seu-usuario/react-kendo.git
 ```
 
 Navegue até o diretório do projeto:
 
 ```bash
-cd nome-do-projeto
+cd react-kendo
 ```
 
 Instale as dependências:
@@ -42,10 +32,16 @@ Instale as dependências:
 npm install
 ```
 
-# ✏️ Iniciar
+# 🚀 Iniciar
 
 ```bash
 npm run start
+```
+
+⚙️ Executando os testes
+
+```bash
+npm run test
 ```
 
 # ✏️ Descrição do Projeto
@@ -59,14 +55,12 @@ Responsividade da página nos principais breakpoints.
 Implementar um sistema de paginação.
 Criar um sistema de rotas dinâmicas.
 
-# ✏️ Licença
+# 📄 Licença
 
 MIT
 
-# 📈 Status do Projeto
-
-![Frame 16](https://user-images.githubusercontent.com/108281436/192803852-d0a0e110-a351-4eb9-ad0e-95cb36a0bb49.png)
-<img width="120" src="https://user-images.githubusercontent.com/108281436/192803852-d0a0e110-a351-4eb9-ad0e-95cb36a0bb49.png" />
+#✒️ Autor
+Eliel Gomes Hyertquist
 
 # 🛠️ Funcionalidades e Demonstração da Aplicação
 
@@ -104,3 +98,8 @@ ou acesse direto pelo link
 <img width=60 heigth=60 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
 
 </div>
+
+🎁 Expressões de gratidão
+
+
+⌨️ com ❤️ por Eliel Gomes 😊
