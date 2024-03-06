@@ -12,7 +12,6 @@ export const useNavbar = () => {
 			return;
 		}
 		navigate(`/search?q=${debounceValue}`);
-		setSearchInput("");
 	}, [debounceValue]);
 
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
