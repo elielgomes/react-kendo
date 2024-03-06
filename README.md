@@ -17,7 +17,7 @@ Node.js >= 18.0.0
 Clone o repositório do GitHub:
 
 ```bash
-git clone https://github.com/seu-usuario/react-kendo.git
+git clone https://github.com/elielgomes/react-kendo.git
 ```
 
 Navegue até o diretório do projeto:
